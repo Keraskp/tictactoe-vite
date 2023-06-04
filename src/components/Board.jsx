@@ -1,9 +1,9 @@
 import Square from './Square.jsx';
 
-const Board = ({squares, handleSquareClick}) => {
-
+const Board = ({squares, handleSquareClick, winningSquares}) => {
     const renderSquare = (position) => {
-        return (<Square value = {squares[position]} onClick={()=> handleSquareClick(position)}/>);
+        const isWinningSquare = winningSquares.includes(position)
+        return (<Square value = {squares[position]} onClick={()=> handleSquareClick(position)} isWinningSquare={isWinningSquare}/>);
     };
     return (<div className="board">
         <div className="board-row">
