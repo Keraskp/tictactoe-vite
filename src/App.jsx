@@ -51,6 +51,7 @@ function App() {
             <button type="button" className={`btn-reset ${ winner? 'active': ''}`} onClick={onNewGameStart}>Start New Game</button>
             <h4>Current Game History</h4>
             <History history={history} moveTo={moveTo} currentMove={currentMove}/>
+            <div className="bg-balls"></div>
         </div>
     );
 }
