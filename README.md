@@ -38,5 +38,3 @@ To run the project locally, follow these steps:
 ## Credits
 
 This project was created by [keraskp](https://github.com/keraskp).
-
-\
